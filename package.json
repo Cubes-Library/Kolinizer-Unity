@@ -1,6 +1,6 @@
 {
   "name": "kub.kolinizer.unity",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "displayName": "Kolinizer",
   "description": "Installer of Kubs and their drivers",
   "unity": "2019.1",
