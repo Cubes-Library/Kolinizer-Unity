@@ -23,6 +23,13 @@ namespace Kub.Kolinizer
         //private const string _placeholderKolonyId = "Enter Your Kolony ID...";
         private const string runtimePath = "?path=/Runtime/";
         private const string runtimeBasePath = "?path=/Runtime/Base";
+
+        private const string Logo_PKG_PATH = "Packages/kub.kolinizer.unity/Editor/kub_logo.png";
+        private const string Logo_DEBUG_PATH = "Assets/Kub/SrcDelivery/Editor/kub_logo.png";
+
+        private const string GuiSkin_PKG_PATH = "Packages/kub.kolinizer.unity/Editor/Unity/GUI/KolonizerSkin.guiskin";
+        private const string GuiSkin_DEBUG_PATH = "Assets/Kub/SrcDelivery/Editor/Unity/GUI/KolonizerSkin.guiskin";
+
         #endregion
 
         #region Static Variables
@@ -132,11 +139,11 @@ namespace Kub.Kolinizer
         [ExecuteInEditMode]
         private void OnEnable()
         {
-            string assetPath = "Assets/Kub/SrcDelivery/Editor/Unity/GUI/KolonizerSkin.guiskin";
+            string assetPath = GuiSkin_PKG_PATH;
 
             if (!File.Exists(assetPath))
             {
-                assetPath = "Packages/Kolinizer/Editor/Unity/GUI/KolonizerSkin.guiskin";
+                assetPath = GuiSkin_DEBUG_PATH;
             }
 
             if (File.Exists(assetPath))
@@ -573,12 +580,12 @@ namespace Kub.Kolinizer
 
         private void DrawKolonizerImage()
         {
-            string assetPath = "Packages/Kolinizer/Editor/kub_logo.png";
+            string assetPath = Logo_PKG_PATH;
 
             Texture2D cover;
             if (!File.Exists(assetPath))
             {
-                assetPath = "Assets/Kub/SrcDelivery/Editor/kub_logo.png";
+                assetPath = Logo_DEBUG_PATH;
                 if (!File.Exists(assetPath))
                 {
                     Debug.LogWarning($"Can't find logo: {assetPath}");
