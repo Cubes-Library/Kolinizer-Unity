@@ -1,0 +1,19 @@
+{
+  "name": "kub.kolinizer.unity",
+  "version": "0.0.3",
+  "displayName": "Kolinizer",
+  "description": "Installer of Kubs and their drivers",
+  "unity": "2019.1",
+  "unityRelease": "0b5",
+  "documentationUrl": "https://kubs.ai/docs/kolinizer.htm",
+  "dependencies": {
+         "com.unity.nuget.newtonsoft-json": "3.2.1"
+  },
+  "changelogUrl": "https://kubs.ai/changelogs/kolinizerChangeLog.htm",
+  "licensesUrl": "https://kubs.ai/licensing.htm",
+  "author": {
+    "name": "Kub, Inc.",
+    "email": "it@kubs.ai",
+    "url": "https://www.kubs.ai"
+  }
+}

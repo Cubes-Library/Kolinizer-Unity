@@ -1,2 +1,2 @@
-# Kolinizer-Unity
-Kub installer for Unity
+# KubKolinizer
+Kub Kolinizer
