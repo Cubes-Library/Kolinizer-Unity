@@ -136,7 +136,7 @@ namespace Kub.Kolinizer
 
             if (!File.Exists(assetPath))
             {
-                assetPath = "Packages/kub.Kolinizer/Editor/Unity/GUI/KolonizerSkin.guiskin";
+                assetPath = "Packages/Kolinizer/Editor/Unity/GUI/KolonizerSkin.guiskin";
             }
 
             if (File.Exists(assetPath))
@@ -573,7 +573,7 @@ namespace Kub.Kolinizer
 
         private void DrawKolonizerImage()
         {
-            string assetPath = "Packages/kub.Kolinizer/Editor/kub_logo.png";
+            string assetPath = "Packages/Kolinizer/Editor/kub_logo.png";
 
             Texture2D cover;
             if (!File.Exists(assetPath))
@@ -585,7 +585,8 @@ namespace Kub.Kolinizer
                     return;
                 }
             }
-                cover = AssetDatabase.LoadAssetAtPath<Texture2D>(assetPath);
+            
+            cover = AssetDatabase.LoadAssetAtPath<Texture2D>(assetPath);
 
             float imageHeight = cover.height;
             float imageWidth = cover.width;
