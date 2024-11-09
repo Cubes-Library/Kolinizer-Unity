@@ -965,6 +965,10 @@ namespace Kub.Kolinizer
 
                     if (package.packageId.EndsWith(".git"))
                     {
+                        if (package.packageId.Contains("Kolinizer"))
+                        {
+                            continue;  // don't include self (the installer). -chuck
+                        }
                         try
                         {
                             // Add the full git string, removing prepended package name.
