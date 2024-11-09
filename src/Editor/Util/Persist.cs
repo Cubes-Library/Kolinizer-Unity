@@ -64,7 +64,7 @@ namespace Kub.Util
         }
         public static void ClearSavedData(string prefName)
         {
-            Tclass freshClass = new();
+            Tclass freshClass = new Tclass();
             Save(freshClass, prefName);
         }
 
